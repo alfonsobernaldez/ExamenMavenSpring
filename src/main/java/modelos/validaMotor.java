@@ -9,10 +9,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-/**
- *
- * @author berni
- */
+//PARA METER LAS EXCEPCIONES EN EL FORMULARIO, QUE NO PUEDES HACER Y QUE ES LO QUE HAY QUE METER
 public class validaMotor implements Validator{
     
     @Override

@@ -20,6 +20,9 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="alta.htm">altaController</prop>
+                <prop key="listado.htm">listadoController</prop>
+
             </props>
         </property>
     </bean>
@@ -32,8 +35,11 @@
     <!--
     The index controller.
     -->
-    <bean name="indexController"
-          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+    <!-- Las direcciones para enlazar jsp-htm- y sus controllers -->
+    <bean name="altaController"  class="controller.altaController" />
+    <bean name="listadoController" class="controller.listadoController"/>
+    
+    <bean name="indexController" class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
 
 </beans>
